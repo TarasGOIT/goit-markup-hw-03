@@ -56,7 +56,6 @@ ul {
 body {
   background-color: #fff;
   font-family: var(--main-font);
-  max-width: 1600px;
   letter-spacing: 0.03em;
 }
 section {
@@ -64,10 +63,13 @@ section {
 }
 /* Шапка сайта */
 
-.header-box {
-  display: flex;
+.header {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.header-box {
+  display: flex;
   align-items: center;
 }
 
@@ -223,15 +225,22 @@ section {
 
 /* Секция особенности */
 
+.feature {
+  padding: 94px 0;
+}
+
 .feature-list {
   display: flex;
-  margin-top: 94px;
-  justify-content: space-around;
 }
 
 .feature-item {
   width: 270px;
   height: 101px;
+  margin-right: 30px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
 }
 
 .feature-title {
@@ -259,8 +268,11 @@ section {
 
 /* Секция Чем мы занимаемся */
 
+.occupation {
+  padding: 94px 0;
+}
+
 .occupation-title {
-  margin-top: 94px;
   text-align: center;
 
   font-style: normal;
@@ -273,9 +285,7 @@ section {
 
 .occupation-list {
   display: flex;
-  justify-content: space-around;
   margin-top: 50px;
-  margin-bottom: 94px;
 }
 .occupation-item:nth-child(n + 2) {
   margin-left: 30px;
@@ -285,10 +295,10 @@ section {
 
 .employee {
   background-color: rgba(245, 244, 250, 1);
+  padding: 94px 0;
 }
 
 .employee-title {
-  padding-top: 94px;
   text-align: center;
 
   font-style: normal;
@@ -300,13 +310,15 @@ section {
 }
 .employee-list {
   display: flex;
-  justify-content: space-around;
   margin-top: 50px;
-  padding-bottom: 94px;
 }
 
 .employee-item {
   background-color: #fff;
+}
+
+.employee-item:nth-child(n + 2) {
+  margin-left: 30px;
 }
 
 .employee-title-name {
@@ -383,17 +395,6 @@ section {
   margin-top: 50px;
 }
 
-/* .examples-list .item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.examples-list .item:nth-child(3n + 3) {
-  margin-right: 0px;
-}
-
-.examples-list .item:nth-child(n + 7) {
-  margin-bottom: 0px; */
 .services-item {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -450,6 +451,10 @@ section {
   color: var(--title-color);
 }
 
+.footer-maps {
+  display: inline-block;
+}
+
 .footer-list {
   margin-top: 20px;
 }
@@ -469,6 +474,7 @@ section {
   font-size: 14px;
   line-height: 1.71;
   color: var(--title-color);
+  list-style: none;
 }
 
 .footer-link-mail {
