@@ -325,6 +325,7 @@ section {
 .employee-text {
   margin-top: 10px;
   text-align: center;
+  padding-bottom: 30px;
 
   font-family: var(--main-font);
   font-style: normal;
