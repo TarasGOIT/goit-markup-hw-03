@@ -66,6 +66,7 @@ section {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .header-box {
@@ -349,6 +350,7 @@ section {
 }
 
 /* Портфолио */
+
 .nav-port {
   padding-bottom: 94px;
 }
@@ -369,10 +371,13 @@ section {
   background-color: rgba(245, 244, 250, 1);
 }
 
+.nav-port {
+  padding: 94px 0;
+}
+
 .nav-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
 }
 
 .nav-item {
