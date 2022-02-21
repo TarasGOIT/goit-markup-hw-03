@@ -6,7 +6,7 @@
   --main-color: rgba(117, 117, 117, 1);
 
   --secondary-color: rgb(33, 33, 33, 1);
-  --unique-color: rgb(33, 150, 243, 1);
+  --accent-color: rgb(33, 150, 243, 1);
   --title-color: rgb(255, 255, 255, 1);
   /* Основные фоны */
 }
@@ -66,6 +66,7 @@ section {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -114,7 +115,7 @@ section {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  color: var(--unique-color);
+  color: var(--accent-color);
   letter-spacing: 0.03em;
 }
 
@@ -130,7 +131,7 @@ section {
 
 .header-link:hover,
 .header-link:focus {
-  color: var(--unique-color);
+  color: var(--accent-color);
 }
 
 .header-link-txt {
@@ -149,7 +150,7 @@ section {
 
 .header-link-txt:hover,
 .header-link-txt:focus {
-  color: var(--unique-color);
+  color: var(--accent-color);
 }
 
 .header-mail {
@@ -168,7 +169,7 @@ section {
 
 .header-mail:hover,
 .header-mail:focus {
-  color: var(--unique-color);
+  color: var(--accent-color);
 }
 
 .header-phone {
@@ -186,7 +187,7 @@ section {
 
 .header-phone:hover,
 .header-phone:focus {
-  color: var(--unique-color);
+  color: var(--accent-color);
 }
 
 /* Секция герой */
@@ -221,13 +222,13 @@ section {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--title-color);
-  background-color: var(--unique-color);
+  background-color: var(--accent-color);
 }
 
 /* Секция особенности */
 
 .feature {
-  padding: 94px 0;
+  padding-top: 94px;
 }
 
 .feature-list {
@@ -322,8 +323,12 @@ section {
   margin-left: 30px;
 }
 
+.employee-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .employee-title-name {
-  margin-top: 30px;
   text-align: center;
 
   font-family: var(--main-font);
@@ -338,7 +343,6 @@ section {
 .employee-text {
   margin-top: 10px;
   text-align: center;
-  padding-bottom: 30px;
 
   font-family: var(--main-font);
   font-style: normal;
@@ -391,7 +395,7 @@ section {
 .nav-button:hover,
 .nav-button:focus {
   color: var(--title-color);
-  background-color: var(--unique-color);
+  background-color: var(--accent-color);
 }
 
 .services-list {
@@ -420,6 +424,8 @@ section {
   border-left: 1px solid #eeeeee;
 }
 .services-primary-text {
+  margin-bottom: 4px;
+
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -438,7 +444,7 @@ section {
 }
 
 .current {
-  color: var(--unique-color);
+  color: var(--accent-color);
 }
 
 /* Footer */
@@ -497,7 +503,7 @@ section {
 
 .footer-link-mail:hover,
 .footer-link-mail:focus {
-  color: var(--unique-color);
+  color: var(--accent-color);
 }
 
 .footer-link-phone {
@@ -511,5 +517,5 @@ section {
 
 .footer-link-phone:hover,
 .footer-link-phone:focus {
-  color: var(--unique-color);
+  color: var(--accent-color);
 }
